@@ -1,0 +1,18 @@
+body{
+    background-color: #632C83;
+}
+
+#home{
+    height: 100vh;
+}
+
+#whatis{
+    background-image: url(/asset/ryzen.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#contact{
+    height: 100vh;
+}

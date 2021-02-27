@@ -12,17 +12,24 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Favicon -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
+  <!-- Custom JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+  <!-- Favicon -->
   <link rel="icon" href="asset/icon.svg">
   <title>Build PCs made simple - RKTPC</title>
 </head>
 
 <body>
+  <!-- Button To Top -->
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
   <!-- NavBar -->
-  <nav id="navbars" class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #401957;">
+  <nav id="navbars" class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand p-2 mx-3" href="#">RKTPC</a>
+      <a class="navbar-brand p-2 mx-3" href="#" id="navtitle">RKTPC</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -66,23 +73,32 @@
     </button>
   </div> -->
   <!-- Main Content -->
-  <div id="home"class="container" style="background-color: #632C83;">
+  <div id="home" class="container mt-5">
     <div class="row main">
-      <div class="col-md-6">
-        <h2 class="mt-5">BUILD YOUR OWN</h2>
-        <h1 class="display-3">Gaming PCs made simple</h1>
-        <p>Hello. Saya akan membantu anda untuk mendapatkan tubuh yang lebih ideal dan selalu sehat.</p>
-        <button class="btn btn-light btn-outline-dark btn-light">Book Now</button>
+      <div class="col-md-6" id="title">
+        <h4 class="mt-5 fw-normal">BUILD YOUR OWN</h4>
+        <h1 class="mb-4" style="font-family: 'Open Sans', sans-serif;">Gaming PCs made simple</h1>
+        <ul class="ps-4 fs-5">
+          <li class="mb-3">Pick your price</li>
+          <li>We’ll Build it!</li>
+        </ul>
+        <button class="btn btn-light btn-light mt-4" id="homebutton">
+          <p class="mx-2 mb-auto fw-normal">Start Your PC</p>
+        </button>
       </div>
     </div>
-  </div>  
+    <div class="scene" id="scene">
+      <div data-depth="0.50"><img src="/asset/imgmain.png" class="bg-img"></div>
+    </div>
+  </div>
   <!-- Content -->
   <section id="whatis" class="img-fluid">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto text-center">
           <h1 class="mt-5 text-light">BEAUTIFUL INSIDE AND OUT</h1>
-          <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A praesentium est minima aperiam
+          <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A praesentium est minima
+            aperiam
             ipsam dolor
             ullam dignissimos et! Ut consequatur voluptates provident odit sapiente at facere consequuntur assumenda
             debitis delectus.</p>
@@ -91,7 +107,20 @@
       </div>
     </div>
   </section>
-  <section id="game" class="bg-danger">
+  <section id="game" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto text-center" style="color: #632C83;">
+          <h1 class="mt-3">BEAUTIFUL INSIDE AND OUT</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A praesentium est minima aperiam ipsam dolor
+            ullam dignissimos et! Ut consequatur voluptates provident odit sapiente at facere consequuntur assumenda
+            debitis delectus.</p>
+          <button class="btn btn-light btn-outline-dark my-3">This is Button</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pricing">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto text-center">
@@ -104,20 +133,7 @@
       </div>
     </div>
   </section>
-  <section id="pricing" class="bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto text-center">
-          <h1 class="mt-3">BEAUTIFUL INSIDE AND OUT</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A praesentium est minima aperiam ipsam dolor
-            ullam dignissimos et! Ut consequatur voluptates provident odit sapiente at facere consequuntur assumenda
-            debitis delectus.</p>
-          <button class="btn btn-light btn-outline-dark my-3">This is Button</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="bg-warning">
+  <section id="contact" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-md-8 mx-auto text-center">
@@ -143,6 +159,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
+  <script>
+
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+
+  </script>
+
 </body>
 
 </html>

@@ -19,16 +19,11 @@ body{
     background-color: #632C83;
 }
 
-.bg-img{
-    position: absolute;
-    bottom: 70px;
-    right: 60px;
-    width: 50%;
-    overflow: hidden;
+#paralax{
+    margin-top: 50px;
 }
-
-#scene {
-    margin-top: 200px;
+.scene .bg-img{
+    width: 110%;
 }
 
 #homebutton{
@@ -51,7 +46,7 @@ body{
 }
 
 #whatis{
-    background-image: url(/asset/ryzen.jpg);
+    background-image: url("../asset/ryzen.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;

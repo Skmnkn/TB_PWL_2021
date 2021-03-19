@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #632C83;
+    background-color: #78399c;
 }
 
 #navbars{
@@ -16,7 +16,7 @@ body{
 
 #home{
     height: 100vh;
-    background-color: #632C83;
+    background-color: #78399c;
 }
 
 #paralax{
@@ -29,6 +29,10 @@ body{
 #homebutton{
     color: #8952A9;
     font-family: 'Open Sans', sans-serif;
+}
+
+#homebutton a{
+    color: #8952A9;
 }
 
 #title{
@@ -46,22 +50,28 @@ body{
 }
 
 #whatis{
-    background-image: url("../asset/ryzen.jpg");
+    background-image: url("../asset/ds1.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
 }
 
+#whatis h1{
+    padding-top: 280px;
+    text-shadow: 0px 2px 3px black;
+}
+
 #game{
     height: 100vh;
+    background-color: #78399c;
 }
 
 #pricing{
     height: 100vh;
-    background-color: #632C83;
-    color: white;
+    background-color: #78399c;
 }
 
 #contact{
     height: 100vh;
+    background-color: #78399c;
 }

@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Custom JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
@@ -55,7 +56,7 @@
   <!-- Main Content -->
   <div id="home" class="container mt-5">
     <div class="row main">
-      <div class="col-md-6" id="title">
+      <div class="col-md-6" id="title" data-aos="fade-up">
         <h4 class="mt-5 fw-normal">BUILD YOUR OWN</h4>
         <h1 class="mb-4" style="font-family: 'Open Sans', sans-serif;">Gaming PCs made simple</h1>
         <ul class="ps-4 fs-5">
@@ -76,80 +77,85 @@
   <!-- Content -->
   <section id="whatis" class="img-fluid">
     <div class="container">
-      <div class="row">
+      <div class="row" data-aos="fade-up">
         <div class="col-md-6 mx-auto">
-          
+
         </div>
         <div class="col-md-6 mx-auto text-center">
           <h1 class="text-light">BEAUTIFUL INSIDE AND OUT</h1>
-          <p class="pt-3 fs-5 text-light fw-light">Every component in our curated inventory is rigorously tested to ensure they are the best out there. If we don't find a component that meets our standards, we build it ourselves—like the award-winning Kraken all-in-one liquid cooler and our signature H Series cases. </p>
+          <p class="pt-3 fs-5 text-light fw-light">Every component in our curated inventory is rigorously tested to
+            ensure they are the best out there. If we don't find a component that meets our standards, we build it
+            ourselves—like the award-winning Kraken all-in-one liquid cooler and our signature H Series cases. </p>
         </div>
       </div>
     </div>
   </section>
   <section id="game">
     <div class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo omnis, possimus commodi quia minima officiis temporibus nulla voluptas error veniam quasi, veritatis pariatur, iusto sed voluptate libero? Quis, blanditiis aliquam.
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo omnis, possimus commodi quia minima officiis
+        temporibus nulla voluptas error veniam quasi, veritatis pariatur, iusto sed voluptate libero? Quis, blanditiis
+        aliquam.
       </p>
     </div>
   </section>
   <section id="pricing">
     <div class="container">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 text-light">Pricing</h1>
-        <p class="lead text-light">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+        <h1 class="display-4 text-light text fw-normal">Pricing</h1>
+        <p class="lead text-light">Quickly build an effective pricing table for your potential customers with this
+          Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" data-aos="fade-up">
         <div class="col">
           <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 fw-normal">Free</h4>
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Free</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+            </div>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-          </div>
-        </div>
-        </div>
-        <div class="col">
-          <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 fw-normal">Pro</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-          </div>
-        </div>
         </div>
         <div class="col">
           <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 fw-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+            </div>
           </div>
         </div>
+        <div class="col">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <a type="button" class="w-100 btn btn-lg btn-primary" href="#contact">Contact us</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -169,77 +175,77 @@
   </section>
   <!-- Footer -->
   <!-- Footer -->
-<footer class="text-center text-lg-start" style="background-color: #401957;">
-  <!-- Grid container -->
-  <div class="container p-4">
-    <!--Grid row-->
-    <div class="row">
-      <!--Grid column-->
-      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase text-light">Footer Content</h5>
+  <footer class="text-center text-lg-start" style="background-color: #401957;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-light text-center">Footer Content</h5>
 
-        <p class="text-light">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-          voluptatem veniam, est atque cumque eum delectus sint!
-        </p>
+          <p class="text-light" style="text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <ul class="list-unstyled mb-0">
+            <h5 class="text-uppercase text-light">Links</h5>
+            <li>
+              <a href="#!" class="text-light">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-light mb-0">Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-light">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-light">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
       </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        
-        <ul class="list-unstyled mb-0">
-        <h5 class="text-uppercase text-light">Links</h5>
-          <li>
-            <a href="#!" class="text-light">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="text-light">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="text-light">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="text-light">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase text-light mb-0">Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!" class="text-light">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="text-light">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="text-light">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="text-light">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <!--Grid column-->
+      <!--Grid row-->
     </div>
-    <!--Grid row-->
-  </div>
-  <!-- Grid container -->
+    <!-- Grid container -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright:
-    <a class="text-light" href="" style="text-decoration: none;">Kelompok 4</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+    <!-- Copyright -->
+    <div class="text-center p-3 text-light" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-light" href="" style="text-decoration: none;">Kelompok 2</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -258,6 +264,11 @@
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
 
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offset: 400, duration: 1000 });
   </script>
 
 </body>

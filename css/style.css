@@ -66,12 +66,46 @@ body{
     background-color: #78399c;
 }
 
+#game h2{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
 #pricing{
     height: 100vh;
+    background-color: #78399c;
+    background-image: url("../asset/bld1.jpg");
+    background-size: cover;
+}
+
+#pricing li{
+    margin-bottom: 20px;
+}
+
+#pricing a{
     background-color: #78399c;
 }
 
 #contact{
     height: 100vh;
     background-color: #78399c;
+}
+
+#contact form label{
+    margin-top: 10px;
+}
+
+#contact .col-6{
+    margin-top: 100px;
+}
+
+.contact-form{
+    margin:0 auto;
+    border-radius:5px;
+}
+
+@media (max-width: 576px) { 
+    #paralax{
+        display: none;
+    }
 }

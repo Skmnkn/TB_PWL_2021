@@ -109,3 +109,15 @@ body{
         display: none;
     }
 }
+
+@media (max-width: 767.98px) {
+    #paralax{
+        display: none;
+    }
+    #home{
+        background-image: url("/tb_pwl_2019/asset/ds2.jpg");
+        background-size: cover;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+}
